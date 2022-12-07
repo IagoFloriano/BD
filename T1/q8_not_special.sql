@@ -1,6 +1,7 @@
 select count(*)
-from(select distinct c_custkey
-  from customer
+from(
+  select distinct o_custkey
+  from orders
 
   except
 
